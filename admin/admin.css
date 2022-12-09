@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300;400;500&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nerko One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: #f3f1ef;
+    overflow-y: hidden;
+}
+
+ a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar_pages p {
+    margin-bottom: 20px;
+    text-align: start;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.sidebar p:hover{
+    background-color: rgb(255, 232, 222);
+}
+.sidebar p a:hover{
+    cursor: pointer;
+}
+.admin_dashboard{
+    display: flex;
+}
+
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+form div input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 2rem;
+    outline: none;
+}
+
+textarea{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 5rem;
+}
+input[type="file"]{
+    margin-bottom: 2px;
+}
+#date{
+    margin-top: 10px;
+}
+form div input[type="checkbox"] {
+    height: auto;
+}
+.status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 5rem;
+}
+form{
+    border: solid;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+
+form .btn{
+    background-color: rgb(20, 20, 20);
+    color: rgb(237, 237, 237);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.form{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.sidebar{
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    background-color: #fff;
+    border: none;
+    width: 10rem;
+}
+
+.sidebar h1{
+    padding: 20px 0;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+}
+
+.navigations{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigations button{
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #000;
+}
+
+#logout{
+    color: #fff;
+}
+
+.navigations button:hover{
+    cursor: pointer;
+}
+
+.main_body {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 10rem;
+    text-align: start;
+}
+.head{
+    padding-left: 100px;
+}
+.main_body h1{
+    margin-left: 20px;
+}
+.container_group{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* grid-template-rows: auto; */
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+.containers{
+    border-radius: 10px;
+}
+
+.containers h3{
+    margin: 20px 0 0 20px;
+}
+
+.container_a{
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    width: 20rem;
+    height: 20rem;
+}
+.container_b{
+    background-color: rgb(196, 223, 225);
+    width: 45rem;
+    height: 20rem;
+}
+.container_c{
+    width: 66rem;
+    grid-column: 1/3;
+    height: 10rem;
+    background-color: rgb(232, 161, 133);
+}
+
+
+.message{
+    background-color: #a0f6a1;
+    border: none;
+    border-radius: 5px;
+    width: 20rem;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.header_container{
+    display: flex;
+}
+.all_cats{
+    margin-top: 20px;
+    margin-left: 12rem;
+    margin-right: 10px;
+}
+.all_cats h1{
+    margin-bottom: 20px;
+}
+table::-webkit-scrollbar {
+    display: none;
+  }
+.table_view table{
+    width: 100%;
+    height: 30rem;
+    overflow-y: scroll;
+    display: block;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px  #b7b7b7;
+}
+.table_view table td{
+    text-align: center;
+}
+
+.table_view table td, th{
+    padding: 20px 60px;
+}
+th{
+    border-bottom: 1px solid #ddd;
+}
+td{
+    color: #ababab;
+}
+
+.edit_btn{
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
