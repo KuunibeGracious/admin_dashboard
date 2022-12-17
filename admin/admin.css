@@ -11,12 +11,15 @@ body{
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     background-color: #f3f1ef;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
- a{
+.sibar_pages p a{
     text-decoration: none;
     color: #000;
+}
+ .active{
+    background-color: rgb(232, 161, 133);
 }
 
 .sidebar_pages p {
@@ -36,12 +39,14 @@ body{
 }
 
 
+
+
 form div{
     display: flex;
     flex-direction: column;
     width: 40rem;
 }
-form div input{
+form div input, select{
     margin-bottom: 20px;
     margin-top: 10px;
     height: 2rem;
@@ -106,11 +111,13 @@ form .btn{
 .sidebar h1{
     padding: 20px 0;
     margin-bottom: 40px;
-    letter-spacing: 10px;
 }
 
+
+
+
 .navigations{
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,19 +205,19 @@ form .btn{
 .header_container{
     display: flex;
 }
-.all_cats{
+.all_cats, .all_prod{
     margin-top: 20px;
     margin-left: 12rem;
     margin-right: 10px;
 }
-.all_cats h1{
+.all_cats h1, .all_prod h1{
     margin-bottom: 20px;
 }
 table::-webkit-scrollbar {
     display: none;
   }
 .table_view table{
-    width: 100%;
+    width: 60rem;
     height: 30rem;
     overflow-y: scroll;
     display: block;
@@ -223,7 +230,7 @@ table::-webkit-scrollbar {
 }
 
 .table_view table td, th{
-    padding: 20px 60px;
+    padding: 10px 60px;
 }
 th{
     border-bottom: 1px solid #ddd;
@@ -232,9 +239,49 @@ td{
     color: #ababab;
 }
 
-.edit_btn{
+.action_btn{
     background-color: rgb(20, 20, 20);
     color: #fff;
     border-radius: 5px;
     padding: 4px 10px;
+    font-size: 14px;
+}
+
+#act_btn{
+    color: #fff;
+}
+
+
+.action_btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    color: #fff;
+}
+
+#edit{
+    color: #fff;
+}
+
+.add_products{
+    margin-left: 12rem;
+    margin-top: 20px;
+}
+.sbd_flds{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sbd_flds div{
+    width: 19rem;
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px #000; */
 }

@@ -21,6 +21,10 @@ include '../admin/inc/sidebar.php';
                 <input type="text" name="cat_name">
             </div>
             <div>
+                <label for="slug">Slug: </label>
+                <input type="text" name="slug">
+            </div>
+            <div>
                 <label for="cat_description">Description: </label>
                 <textarea name="cat_description" id="" cols="30" rows="10"></textarea>
             </div>
